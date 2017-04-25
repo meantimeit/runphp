@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Get the base directory
+base_dir=$(dirname "$1")
+# Get the script name
+script_name=$(basename "$1")
+# Move to the base directory
+cd $base_dir
+# Execute the script
+php "$script_name"
