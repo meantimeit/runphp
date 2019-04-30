@@ -6,5 +6,7 @@ base_dir=$(dirname "$1")
 script_name=$(basename "$1")
 # Move to the base directory
 cd $base_dir
+# Shift the first arg off
+shift 1
 # Execute the script
-php "$script_name"
+php "$script_name" $@
